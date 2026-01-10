@@ -72,6 +72,20 @@ header {
   background-color: rgba(245, 240, 234, 0.95);
 }
 
+.navbar-brand .logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: none; /* removed border as requested */
+  box-shadow: 0 6px 12px rgba(44, 54, 90, 0.08);
+}
+
+html.dark-mode .navbar-brand .logo-img {
+  border: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
 html.dark-mode header {
   background-color: rgba(22, 22, 22, 0.95);
 }

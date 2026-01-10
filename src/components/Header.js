@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import { Menu, X, Moon, Sun } from "lucide-react"
+import logo from "../images/MyLogo.png" // local logo image
+
 
 export default function Header({ activeSection, setActiveSection, darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +28,7 @@ export default function Header({ activeSection, setActiveSection, darkMode, togg
     <header>
       <nav className="navbar">
         <div className="navbar-brand">
+          <img src={logo} alt="My logo" className="logo-img" />
           <span className="logo">Portfolio</span>
         </div>
 
